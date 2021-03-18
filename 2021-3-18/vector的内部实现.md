@@ -58,21 +58,27 @@ vector维护的是一个连续线性空间，所以vector支持随机存取 。
 vector 的 resize 和reserve：
 resize用于改变vector的大小，reserve用于改变capatity大小。在使用vector时，主动使用reserve提前分配空间，防止多次重新分配复制消耗时间
 定义一个指定大小的vector对象：
+
 ![rr1](../Sources/2021-3-18/rr1.png)
 
 1、当resize的参数小于原有大小时，size和capatity的变化：size变小，capatity不变
+
 ![rr2](../Sources/2021-3-18/rr2.png)
 
 2、当resize的参数大于原有大小时，size和capatity的大小变化：size变为指定大小；而capatity大小根据指定大小不同而不同：当大小小于原有大小的二倍，其值变为原来的二倍
+
 ![rr3](../Sources/2021-3-18/rr3.png)
 
 当指定大小大于原有大小的 2 倍，则capatity值变为指定大小。
+
 ![rr4](../Sources/2021-3-18/rr4.png)
 
 3、当reserve的参数小于原有大小时，size大小不变，capatity大小不变
+
 ![rr5](../Sources/2021-3-18/rr5.png)
 
 4、当 reserve 大小大于原有大小时，size 的大小不变，capatity 的大小变为指定大小
+
 ![rr6](../Sources/2021-3-18/rr6.png)
 
 
