@@ -82,4 +82,6 @@ resize用于改变vector的大小，reserve用于改变capatity大小。在使�
 ![rr6](../Sources/2021-3-18/rr6.png)
 
 
+***
 
+**个人vector的仿写:**[地址](https://github.com/Willbebest/Program-fragment-in-cpp/blob/master/Vec.h)
