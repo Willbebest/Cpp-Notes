@@ -84,7 +84,7 @@ long sum(long num, ...)
 	long sum = 0;
 	
 	va_start(ap, num);
-	while(nums--) {
+	while(num--) {
 	sum += va_arg(ap, long);
 	}
 	va_end(ap);
